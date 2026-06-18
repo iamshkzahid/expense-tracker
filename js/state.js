@@ -11,7 +11,7 @@ function initializeTransactions() {
   transactions = loadTransactions();
 }
 
-// addTransaction() - Creates a new transaction and adds it to the array
+// addTransaction() - Create a new transaction and adds it to the array
 function addTransaction(description, amount, type) {
   // Create a unique ID using the current timestamp
   const newTransaction = {
@@ -21,7 +21,7 @@ function addTransaction(description, amount, type) {
     type: type
   };
 
-  // Add the new transaction to the array
+  // Add the new transactions to the array
   transactions.push(newTransaction);
 
   // Save updated array to localStorage
@@ -53,7 +53,7 @@ function updateTransaction(id, description, amount, type) {
     }
   }
 
-  // Save updated array to localStorage
+  // Save update array to localStorage
   saveTransactions(transactions);
 }
 
@@ -64,7 +64,7 @@ function calculateTotalIncome() {
     return t.type === "income";
   });
 
-  // reduce() adds up the amounts, starting from 0
+  // reduce() add up to  the amounts, starting from 0
   const total = incomeOnly.reduce(function (sum, t) {
     return sum + t.amount;
   }, 0);

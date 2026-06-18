@@ -1,7 +1,6 @@
 /* ============================================
-   MAIN.JS — Expense Tracker Entry Point
-   ============================================
-*/
+   MAIN.JS — Expense Tracker Entry Points
+   ============================================ */
 
 document.addEventListener("DOMContentLoaded", function () {
   // Step 1: Load any previously save transactions from localStorage
