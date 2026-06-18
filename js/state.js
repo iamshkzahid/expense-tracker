@@ -53,7 +53,7 @@ function updateTransaction(id, description, amount, type) {
     }
   }
 
-  // Save updated array to localStorage
+  // Save update array to localStorage
   saveTransactions(transactions);
 }
 
