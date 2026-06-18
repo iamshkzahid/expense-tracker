@@ -1,13 +1,6 @@
 /* ============================================
    STORAGE.JS — Expense Tracker localStorage
-   ============================================
-   Purpose: Handles reading and writing transactions to localStorage.
-   
-   Why a separate file?
-   - Keeps localStorage logic isolated
-   - If localStorage fails, errors are caught here
-   - Easy to swap storage mechanism later
-   ============================================ */
+   ============================================*/
 
 // Key used to store transactions in localStorage
 const STORAGE_KEY = "expense-tracker-transactions";
