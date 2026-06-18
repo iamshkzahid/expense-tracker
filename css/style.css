@@ -1,5 +1,5 @@
 /* ============================================
-   EXPENSE TRACKER STYLES (Monochrome Theme)
+   EXPENSE TRACKER STYLES (Monochrome Themes)
    ============================================ */
 
 :root {
@@ -105,7 +105,7 @@ body {
 .hamburger { display: none; }
 .back-link { display: none; }
 
-/* ----- TYPOGRAPHY & ELEMENTS ----- */
+/* ----- TYPOGRAPHY & ELEMENT ----- */
 h1, h2 { margin-bottom: var(--space-md); }
 .section-title { text-align: center; margin-bottom: var(--space-xl); }
 

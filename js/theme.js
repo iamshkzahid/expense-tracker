@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const themeToggle = document.getElementById("theme-toggle");
   const htmlElement = document.documentElement;
   
-  // Load saved theme
+  // Load saved themes
   const savedTheme = localStorage.getItem("expense-tracker-theme") || "light";
   htmlElement.setAttribute("data-theme", savedTheme);
   updateButtonText(savedTheme);
