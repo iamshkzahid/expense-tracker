@@ -282,6 +282,15 @@ input, select {
   gap: var(--space-xs);
 }
 
+.footer {
+  text-align: center;
+  margin-top: var(--space-xl);
+  padding: var(--space-md) 0;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-light);
+  
+}
+
 /* ----- RESPONSIVE ----- */
 @media (max-width: 768px) {
   .summary-grid {
