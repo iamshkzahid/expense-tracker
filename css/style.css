@@ -1,0 +1,157 @@
+/* ============================================
+   EXPENSE TRACKER STYLES
+   ============================================ */
+
+/* ----- LAYOUT ----- */
+.expense-wrapper {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ----- SUMMARY CARDS ----- */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.summary-card {
+  text-align: center;
+  padding: var(--space-lg);
+}
+
+.summary-card .summary-label {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.summary-card .summary-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.summary-card .summary-value.income {
+  color: var(--color-success);
+}
+
+.summary-card .summary-value.expense {
+  color: var(--color-danger);
+}
+
+/* ----- FORM ----- */
+.expense-form {
+  margin-bottom: var(--space-xl);
+  padding: var(--space-lg);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.expense-form .btn {
+  width: 100%;
+  padding: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+/* ----- TRANSACTION LIST ----- */
+.transaction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.transaction-header h2 {
+  margin-bottom: 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-sm);
+  background-color: var(--color-bg-card);
+  transition: background-color var(--transition);
+}
+
+/* Left border color indicator */
+.transaction-item.income {
+  border-left: 4px solid var(--color-success);
+}
+
+.transaction-item.expense {
+  border-left: 4px solid var(--color-danger);
+}
+
+.transaction-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  margin-right: var(--space-md);
+}
+
+.transaction-description {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.transaction-amount {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.transaction-amount.income {
+  color: var(--color-success);
+}
+
+.transaction-amount.expense {
+  color: var(--color-danger);
+}
+
+.transaction-actions {
+  display: flex;
+  gap: var(--space-xs);
+}
+
+/* ----- RESPONSIVE ----- */
+@media (max-width: 768px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-sm);
+  }
+
+  .summary-card .summary-value {
+    font-size: 1.25rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .transaction-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-sm);
+  }
+
+  .transaction-info {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .transaction-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
