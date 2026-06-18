@@ -64,7 +64,7 @@ function calculateTotalIncome() {
     return t.type === "income";
   });
 
-  // reduce() add up the amounts, starting from 0
+  // reduce() add up to  the amounts, starting from 0
   const total = incomeOnly.reduce(function (sum, t) {
     return sum + t.amount;
   }, 0);

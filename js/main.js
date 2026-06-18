@@ -1,5 +1,5 @@
 /* ============================================
-   MAIN.JS — Expense Tracker Entry Point
+   MAIN.JS — Expense Tracker Entry Points
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", function () {
