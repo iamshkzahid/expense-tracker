@@ -79,7 +79,7 @@ function calculateTotalExpense() {
     return t.type === "expense";
   });
 
-  // reduce() adds up the amounts, starting from 0
+  // reduce() adds up the amount, starting from 0
   const total = expenseOnly.reduce(function (sum, t) {
     return sum + t.amount;
   }, 0);
