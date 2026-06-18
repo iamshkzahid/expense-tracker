@@ -74,7 +74,7 @@ function calculateTotalIncome() {
 
 // calculateTotalExpense() - Uses filter() + reduce() to sum all expenses
 function calculateTotalExpense() {
-  // filter() keeps only expense transactions
+  // filter() keeps only expense transaction
   const expenseOnly = transactions.filter(function (t) {
     return t.type === "expense";
   });
