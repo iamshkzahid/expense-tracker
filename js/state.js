@@ -21,7 +21,7 @@ function addTransaction(description, amount, type) {
     type: type
   };
 
-  // Add the new transaction to the array
+  // Add the new transactions to the array
   transactions.push(newTransaction);
 
   // Save updated array to localStorage
