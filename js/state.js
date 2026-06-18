@@ -41,7 +41,7 @@ function deleteTransaction(id) {
   saveTransactions(transactions);
 }
 
-// updateTransaction() - Updates an existing transaction's data
+// updateTransactions() - Updates an existing transaction's data
 function updateTransaction(id, description, amount, type) {
   // Find the transaction with the matching ID
   for (let i = 0; i < transactions.length; i++) {
