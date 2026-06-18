@@ -218,7 +218,7 @@ input, select {
   margin-top: var(--space-sm);
 }
 
-/* ----- TRANSACTION LIST ----- */
+/* ----- TRANSACTION LISTS ----- */
 .transaction-header {
   display: flex;
   justify-content: space-between;
