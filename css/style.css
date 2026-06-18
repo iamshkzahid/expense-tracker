@@ -168,7 +168,7 @@ input, select {
   margin: 0 auto;
 }
 
-/* ----- SUMMARY CARDS ----- */
+/* ----- SUMMARY CARD ----- */
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
