@@ -57,7 +57,7 @@ function updateTransaction(id, description, amount, type) {
   saveTransactions(transactions);
 }
 
-// calculateTotalIncome() - Uses filter() + reduce() to sum all income
+// calculateTotalIncome() - Use filter() + reduce() to sum all income
 function calculateTotalIncome() {
   // filter() keeps only income transactions
   const incomeOnly = transactions.filter(function (t) {
