@@ -1,12 +1,5 @@
 /* ============================================
    MAIN.JS — Expense Tracker Entry Point
-   ============================================
-   Purpose: Initializes the Expense Tracker application.
-   
-   Steps:
-   1. Load saved transactions from localStorage
-   2. Render the initial UI
-   3. Set up form submission handler
    ============================================ */
 
 document.addEventListener("DOMContentLoaded", function () {

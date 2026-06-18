@@ -1,14 +1,6 @@
 /* ============================================
    UI.JS — Expense Tracker DOM Rendering
-   ============================================
-   Purpose: Handles ALL visual updates for the Expense Tracker.
-   
-   Reads data from state.js and renders it to the DOM.
-   Also handles form validation and user feedback.
-   
-   SECURITY: All user input is sanitized with sanitizeHTML()
-   to prevent XSS (Cross-Site Scripting) attacks.
-   ============================================ */
+   ========================================== */
 
 // sanitizeHTML() - Prevents XSS by escaping HTML special characters
 function sanitizeHTML(rawString) {

@@ -1,11 +1,5 @@
 /* ============================================
    STATE.JS — Expense Tracker State Management
-   ============================================
-   Purpose: Manages the transactions array and provides
-            CRUD operations (Create, Read, Update, Delete).
-   
-   This file handles the DATA logic only.
-   It does NOT touch the DOM.
    ============================================ */
 
 // Main array that holds all transactions
