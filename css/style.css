@@ -9,7 +9,7 @@
   --color-text-light: #666666;
   --color-border: #e0e0e0;
   
-  /* Monochromatic instead of multicolors */
+  /* Monochromatic instead of multicolor */
   --color-success: #111111;
   --color-danger: #888888;
   
@@ -168,7 +168,7 @@ input, select {
   margin: 0 auto;
 }
 
-/* ----- SUMMARY CARDS ----- */
+/* ----- SUMMARY CARD ----- */
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -218,7 +218,7 @@ input, select {
   margin-top: var(--space-sm);
 }
 
-/* ----- TRANSACTION LIST ----- */
+/* ----- TRANSACTION LISTS ----- */
 .transaction-header {
   display: flex;
   justify-content: space-between;
