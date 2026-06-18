@@ -4,7 +4,7 @@
 */
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Step 1: Load any previously saved transactions from localStorage
+  // Step 1: Load any previously save transactions from localStorage
   initializeTransactions();
 
   // Step 2: Render the transaction list and summary

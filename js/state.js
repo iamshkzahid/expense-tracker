@@ -41,7 +41,7 @@ function deleteTransaction(id) {
   saveTransactions(transactions);
 }
 
-// updateTransaction() - Updates an existing transaction's data
+// updateTransactions() - Updates an existing transaction's data
 function updateTransaction(id, description, amount, type) {
   // Find the transaction with the matching ID
   for (let i = 0; i < transactions.length; i++) {
@@ -57,7 +57,7 @@ function updateTransaction(id, description, amount, type) {
   saveTransactions(transactions);
 }
 
-// calculateTotalIncome() - Uses filter() + reduce() to sum all income
+// calculateTotalIncome() - Use filter() + reduce() to sum all income
 function calculateTotalIncome() {
   // filter() keeps only income transactions
   const incomeOnly = transactions.filter(function (t) {
@@ -74,12 +74,12 @@ function calculateTotalIncome() {
 
 // calculateTotalExpense() - Uses filter() + reduce() to sum all expenses
 function calculateTotalExpense() {
-  // filter() keeps only expense transactions
+  // filter() keeps only expense transaction
   const expenseOnly = transactions.filter(function (t) {
     return t.type === "expense";
   });
 
-  // reduce() adds up the amounts, starting from 0
+  // reduce() adds up to the amount, starting from 0
   const total = expenseOnly.reduce(function (sum, t) {
     return sum + t.amount;
   }, 0);
