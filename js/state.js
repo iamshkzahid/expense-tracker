@@ -11,7 +11,7 @@ function initializeTransactions() {
   transactions = loadTransactions();
 }
 
-// addTransaction() - Creates a new transaction and adds it to the array
+// addTransaction() - Create a new transaction and adds it to the array
 function addTransaction(description, amount, type) {
   // Create a unique ID using the current timestamp
   const newTransaction = {
