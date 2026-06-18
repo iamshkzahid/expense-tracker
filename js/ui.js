@@ -1,6 +1,6 @@
 /* ============================================
    UI.JS — Expense Tracker DOM Rendering
-   ============================================ */
+   =========================================== */
 
 // sanitizeHTML() - Prevents XSS by escaping HTML special characters
 function sanitizeHTML(rawString) {
